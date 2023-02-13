@@ -4,6 +4,7 @@
 
   const $header = d.querySelector('.header'),
   form = d.querySelector('form'),
+  btnSubmit = d.querySelector('button[type="submit"]'),
   message = d.querySelector('.message'),
   asideMenu = d.querySelector('.aside-container'),
   menuIcon = d.querySelector('.menu-bars');
@@ -17,6 +18,8 @@
   form.addEventListener('submit',async (e) => {
 
     e.preventDefault();
+
+    btnSubmit.setAttribute('disabled',true);
 
     const options = {
 
@@ -48,8 +51,9 @@
       setTimeout(() => {
 
         message.classList.remove('visible');
+        btnSubmit.removeAttribute('disabled');
 
-      },3000);
+      },5000);
 
     }
 
