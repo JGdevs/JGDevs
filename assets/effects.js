@@ -30,16 +30,14 @@
 
     try {
 
-      const res = await fetch('https://formsubmit.co/jgdevelopers69@gmail.com',options);
-
+      const res = await fetch('https://formsubmit.io/send/jgdevelopers69@gmail.com',options);
       message.textContent = 'Gracias por tu mensaje, nos pondremos en contacto lo mas pronto posible';
 
     }
 
     catch (err) {
 
-      console.log(err);
-
+      console.log(err);s
       message.textContent = 'Ocurrio un error D:, intenta de nuevo';
 
     }
