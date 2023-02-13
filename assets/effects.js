@@ -37,8 +37,8 @@
 
     catch (err) {
 
-      console.log(err);
       message.textContent = 'Ocurrio un error D:, intenta de nuevo';
+      console.log(err);
 
     }
 
